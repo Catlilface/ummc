@@ -5,9 +5,106 @@
   --ummc-blue: #4C5C6B;
   --ummc-dark-blue: #1C242E;
   --ummc-main-text: #202020;
-  --ummc-decondary-text: #202020B2;
+  --ummc-title-light: rgba(32, 32, 32, 0.15);
+  --ummc-secondary-text: #202020B2;
   --title-size: 100px;
   --subtitle-size: 40px;
   --plain-big-size: 30px;
   --plain-text: 14px;
+  
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.about{
+  padding: 64px 97px 137px 0;
+  background-color: var(--grey-bg);
+}
+.about__title{
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 144px;
+  letter-spacing: -0.03em;
+  color: var(--ummc-title-light);
+  margin-left: 96px;
+  font-family: 'RF Dewi Expanded';
+  margin-bottom: 85px;
+}
+.about__inner{
+  display: flex;
+  gap: 112px;
+}
+.about__img1{
+  margin-left: 226px;
+  margin-top: -135px;
+}
+.about__text + .about__text{
+  margin-top: 56px;
+}
+.about__text-strong{
+  font-family: 'RF Dewi Expanded';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  color: var(--ummc-secondary-text);
+  margin-bottom: 56px;
+}
+.black{
+  color: var(--ummc-main-text);
+}
+.about__text{
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--ummc-main-text);
+}
+.about__text-box{
+  max-width: 543px;
+}
+.activity__text{
+  color: var(--ummc-orange);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  margin-bottom: 44px;
+  max-width: 944px;
+}
+.carousel__item-text{
+  font-family: 'RF Dewi Expanded';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--main-bg);
+  margin: 32px 0 0 32px;
+
+}
+.carousel__item{
+  width: 392px;
+  height: 455px;
+}
+.carousel__item1{
+  background-image: url(../images/po.jpg);
+}
+.carousel__item2{
+  background-image: url(../images/support.jpg);
+}
+.carousel__item3{
+  background-image: url(../images/re.jpg);
+}
+.carousel__item4{
+  background-image: url(../images/po.jpg);
+}
+.footer__top{
+  display: flex;
+  
 }
