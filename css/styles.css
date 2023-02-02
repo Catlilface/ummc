@@ -11,7 +11,6 @@
   --subtitle-size: 40px;
   --plain-big-size: 30px;
   --plain-text: 14px;
-  
 }
 *,
 *::after,
@@ -109,6 +108,7 @@ a{
 }
 .footer__top{
   display: flex;
+<<<<<<< HEAD
   padding: 66px 0 71px;
   align-items: flex-end;
   justify-content: space-between;
@@ -369,4 +369,122 @@ a{
     width: 300px;
     height: 345px;
   }
+=======
+  
+}
+.main-axis {
+  height: 855px;
+  display: flex;
+  font-family: 'RF Dewi Expanded';
+}
+.header-greetings {
+  width: 43.472%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 49px 70px 72px 70px;
+}
+.header-info {
+  width: 32.569%;
+  display: flex;
+  flex-direction: column;
+}
+.header-other {
+  width: 23.959%;
+}
+.greetings {
+  font-size: 48px;
+  color: var(--ummc-main-text);
+  font-family: 'RF Dewi Expanded';
+  font-weight: 700;
+}
+.greetings span {
+  color: var(--ummc-secondary-text);
+  font-weight: 600;
+  font-size: 36px;
+}
+.greetings-s {
+  font-family: 'Raleway';
+  margin-top: 32px;
+  color: var(--ummc-main-text);
+  font-size: 18px;
+}
+.header-contacts {
+  height: 534px;
+  background-image: url('../images/bbg.png');
+  background-size: cover;
+  padding: 60px 48px;
+  color: #fff;
+}
+.header-contacts a {
+  color: #fff;
+}
+.header-about {
+  background-color: var(--ummc-orange);
+  height: 321px;
+  padding: 60px 48px 67px 48px;
+  color: #fff;
+}
+.header-vacancies {
+  height: 354px;
+  background-color: var(--ummc-dark-blue);
+}
+.header-links {
+  height: 501px;
+  background-color: var(--ummc-blue);
+}
+.header-subtitle {
+  font-size: 30px;
+  margin-bottom: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+.header-sub-content {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Raleway';
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #fff;
+  line-height: 18px;
+}
+a {
+  text-decoration: none;
+}
+.header-about::after, .header-vacancies::after {
+  content: url('../images/icon.svg');
+  float: right;
+}
+.header-about .header-subtitle {
+  height: 100%;
+  margin: 0;
+}
+.header-vacancies, .header-links {
+  padding: 60px 48px 67px 48px;
+}
+.header-label {
+  color: #fff;
+}
+.header-about::after {
+  content: url('../images/icon.svg')
+}
+.header-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-links a {
+  color: #fff;
+}
+.header-link {
+  display: flex;
+  align-items: center; 
+  gap: 30px; 
+  font-family: 'Raleway';
+  font-size: 18px;
+}
+.header-link::after {
+  content: url('../images/icon.svg')
+>>>>>>> 4f1c0e1f7d136ceef350e70efde1369f4c622e5a
 }
