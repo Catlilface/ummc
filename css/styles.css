@@ -1,0 +1,13 @@
+:root {
+  --main-bg: #FFFFFF;
+  --grey-bg: rgba(237, 237, 237, 0.72);
+  --ummc-orange: #FF7C00;
+  --ummc-blue: #4C5C6B;
+  --ummc-dark-blue: #1C242E;
+  --ummc-main-text: #202020;
+  --ummc-decondary-text: #202020B2;
+  --title-size: 100px;
+  --subtitle-size: 40px;
+  --plain-big-size: 30px;
+  --plain-text: 14px;
+}
