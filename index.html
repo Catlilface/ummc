@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="fonts/RF Dewi/stylesheet.css">
     <link rel="stylesheet" href="fonts/Raleway/stylesheet.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js" async defer></script>
   </head>
   <body>
-    
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -94,28 +96,72 @@
         </div>
       </div>
     </section>
-    <!--<section class="activity">
+    <section class="activity">
       <div class="container">
         <h1 class="activity__title about__title">Деятельность</h1>
-        <p class="activity__text">ООО "УГМК Диджитал" осуществляет деятельность в области информационных технологий.</p>
+        <p class="activity__text"><span style="font-weight: 800">ООО "УГМК Диджитал"</span> осуществляет деятельность в области информационных технологий.</p>
         <div class="carousel">
           <div class="carousel__inner">
-            <div class="carousel__item carousel__item1">
-              <p class="carousel__item-text">Разработка программного обеспечения</p>
-            </div>
             <div class="carousel__item carousel__item2">
               <p class="carousel__item-text">Техническая поддержка программного обеспечения и инфраструктуры ИТ-систем</p>
+            </div>
+            <div class="carousel__item carousel__item1">
+              <p class="carousel__item-text">Разработка программного обеспечения</p>
             </div>
             <div class="carousel__item carousel__item3">
               <p class="carousel__item-text">Техническое перевооружение объектов хранения и снабжения нефтепродуктов</p>
             </div>
-            <div class="carousel__item carousel__ite4">
+            <div class="carousel__item carousel__item2">
+              <p class="carousel__item-text">Техническая поддержка программного обеспечения и инфраструктуры ИТ-систем</p>
+            </div>
+            <div class="carousel__item carousel__item1">
+              <p class="carousel__item-text">Разработка программного обеспечения</p>
+            </div>
+            <div class="carousel__item carousel__item3">
               <p class="carousel__item-text">Техническое перевооружение объектов хранения и снабжения нефтепродуктов</p>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+    <section class="solution">
+      <div class="container">
+        <h1 class="activity__title about__title">Решение</h1>
+        <a href="#" class="solution-main-link">Подробное описание АИС КУТиПГ</a>
+        <div class="container solution">
+          <div class="solution-text about__text-strong">
+            <span class="black">АИС КУТиПГ <span style="font-weight: 600">- автоматизированная информационная система комплексного учёта топлива и перевозимых грузов.</span></span>
+            <p class="about__text">АИС КУТиПГ представляет собой решение для осуществления различных задач по мониторингу и контролю работы транспортных средств, а так же учёту оборота нефтепродуктов.</p>
+          </div>
+          <div class="solution-menu">
+            <a href="#" class="solution-menu-item">
+              <img src="images/cars.jpg" alt="" class="solution-menu-item-img">
+              <span class="solution-menu-item-text">
+                Транспортный мониторинг
+              </span>
+            </a>
+            <a href="#" class="solution-menu-item">
+              <img src="images/petrol.jpg" alt="" class="solution-menu-item-img">
+              <span class="solution-menu-item-text">
+                Автоматизация учёта топлива
+              </span>
+            </a>
+            <a href="#" class="solution-menu-item">
+              <img src="images/erp.jpg" alt="" class="solution-menu-item-img">
+              <span class="solution-menu-item-text">
+                Интеграция с проприетарными ERP-системами заказчика
+              </span>
+            </a>
+            <a href="#" class="solution-menu-item">
+              <img src="images/servers.jpg" alt="" class="solution-menu-item-img">
+              <span class="solution-menu-item-text">
+                Интеграция с АСУ ТП объектов хранения и снабжения
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
      <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -150,8 +196,16 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js" async defer></script>
+    <script>
+      $(function() {
+        $('.carousel__inner').slick({
+          slidesToShow: 3,
+          arrows: false,
+          variableWidth: true,
+          centerMode: true,
+          focusOnSelect: true
+        });
+      });
+    </script>
   </body>
 </html>

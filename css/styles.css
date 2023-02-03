@@ -11,6 +11,7 @@
   --subtitle-size: 40px;
   --plain-big-size: 30px;
   --plain-text: 14px;
+  font-variant-numeric: lining-nums;
 }
 *,
 *::after,
@@ -18,9 +19,13 @@
   box-sizing: border-box;
 }
 .container{
-  max-width: 1480px;
+  max-width: 1247px;
   padding: 0 20px;
   margin: 0 auto;
+  font-family: "RF Dewi Expanded";
+}
+header > .container {
+  max-width: 1440px;
 }
 a{
   text-decoration: none;
@@ -35,7 +40,6 @@ a{
   line-height: 144px;
   letter-spacing: -0.03em;
   color: var(--ummc-title-light);
-  margin-left: 96px;
   font-family: 'RF Dewi Expanded';
   margin-bottom: 85px;
 }
@@ -68,6 +72,7 @@ a{
   font-size: 18px;
   line-height: 30px;
   color: var(--ummc-main-text);
+  letter-spacing: 0.015em;
 }
 .about__text-box{
   max-width: 543px;
@@ -79,7 +84,10 @@ a{
   line-height: 48px;
   letter-spacing: -0.03em;
   margin-bottom: 44px;
-  max-width: 944px;
+  max-width: 1000px;
+}
+.activity {
+  margin-top: 118px;
 }
 .carousel__item-text{
   font-family: 'RF Dewi Expanded';
@@ -93,18 +101,27 @@ a{
 .carousel__item{
   width: 392px;
   height: 455px;
+  margin: 33px 18px;
+  transition: .4s;
+  background-size: cover;
+  margin-top: 33px;
 }
 .carousel__item1{
   background-image: url(../images/po.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel__item2{
   background-image: url(../images/support.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel__item3{
   background-image: url(../images/re.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.carousel__item4{
-  background-image: url(../images/po.jpg);
+.slick-current {
+  height: 521px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0;
 }
 .footer__top{
   display: flex;
@@ -211,6 +228,7 @@ a{
   flex-basis: 0;
 }
 .footer{
+  margin-top: 130px;
   background-color: var(--grey-bg);
 }
 .orange{
@@ -484,4 +502,66 @@ a {
 }
 .header-link::after {
   content: url('../images/icon.svg')
+}
+.solution > .container {
+  margin-top: 186px;
+}
+.solution .about__title {
+  margin-bottom: 42px;
+}
+.solution-main-link {
+  color: var(--ummc-orange);
+  font-family: "Raleway";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.solution-main-link::after {
+  content: url('../images/icon.svg');
+  filter: invert(54%) sepia(94%) saturate(2870%) hue-rotate(1deg) brightness(103%) contrast(104%);
+  padding: 23px 36px;
+  margin-left: 16px;
+  border-radius: 55px;
+}
+.solution-main-link:hover::after {
+  background-color: var(--ummc-orange);
+  filter: none;
+}
+.container.solution {
+  display: flex;
+  padding: 0;
+  gap: 3%;
+}
+.solution-text {
+  width: 47%;
+  margin-top: 40px;
+}
+.solution-menu {
+  width: 50%;
+}
+.solution-menu-item-img {
+  width: 37%;
+  opacity: 0;
+}
+.solution-menu-item-text {
+  width: 63%;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 32px
+}
+.solution-menu-item:hover .solution-menu-item-text {
+  color: var(--ummc-orange);
+}
+.solution-menu-item:hover .solution-menu-item-img {
+  opacity: 1;
+}
+.solution-menu-item {
+  display: flex;
+  align-items: center;
+}
+.solution-text .about__text {
+  margin-top: 52px;
+  max-width: 530px;
 }
