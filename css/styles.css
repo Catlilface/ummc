@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 .container{
-  max-width: 1247px;
+  max-width: 1287px;
   padding: 0 20px;
   margin: 0 auto;
   font-family: "RF Dewi Expanded";
@@ -95,8 +95,7 @@ a{
   font-size: 24px;
   line-height: 31px;
   color: var(--main-bg);
-  margin: 32px 0 0 32px;
-
+  margin: 65px 0 0 32px;
 }
 .carousel__item{
   width: 392px;
@@ -143,7 +142,7 @@ a{
   line-height: 24px;
   color: var(--ummc-main-text);
   margin-bottom: 4px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .footer__contacts-chart{
   font-family: "Raleway";
@@ -170,10 +169,11 @@ a{
   line-height: 24px;
   margin-bottom: 4px;
   font-weight: 400;
+  color: var(--ummc-blue)
 }
 .footer__location-text{
   font-family: 'RF Dewi Expanded';
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
@@ -182,7 +182,7 @@ a{
   font-size: 16px;
   line-height: 24px;
   color: var(--ummc-main-text);
-  font-weight: 400;
+  font-weight: 600;
 }
 .footer__location{
   margin: 0 auto;
@@ -378,7 +378,114 @@ a{
   .footer__politic{
     font-size: 10px;
   }
-
+  .about {
+    padding: 64px 0 62px 0;
+  }
+  .activity {
+    margin-top: 72px;
+  }
+  .activity__text {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .carousel__item {
+    height: 325px !important;
+    width: 300px !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .slick-current {
+    height: 400px !important;
+    width: 300px !important
+  }
+  .carousel__inner {
+    margin: 0 -21px;
+  }
+  section.solution > div:nth-child(1) {
+    margin-top: 60px;
+  }
+  section.solution > div:nth-child(1) > h1:nth-child(1) {
+    margin-bottom: 22px;
+  }
+  .solution-text, .solution-menu {
+    width: 100% !important;
+  }
+  .container.solution {
+    flex-wrap: wrap;
+  }
+  .solution-text .black {
+    color: #202020B2;
+  }
+  .solution-text {
+    margin-top: 22px !important;
+  }
+  .solution-menu-item-img {
+    width: 118px !important;
+  }
+  .solution-menu-item-text {
+    font-size: 18px !important;
+    width: unset !important;
+  }
+  .solution-menu-item {
+    align-items: flex-start !important;
+    margin-bottom: 69px;
+  }
+  .solution-menu-item-img {
+    opacity: 1 !important;
+  }
+  .footer {
+    margin-top: 31px;
+  }
+  .carousel__item-text {
+    font-size: 18px;
+    margin: 48px 0 0 24px !important;
+  }
+  .carousel__item-description {
+    margin: 24px !important;
+  }
+  .logo img {
+    width: 264px
+  }
+  .header-greetings {
+    padding: 14px 0 60px 0 !important;
+    height: 483px;
+  }
+  .greetings span, .greetings {
+    font-size: 27px !important;
+  }
+  .greetings-s {
+    font-size: 12px !important;
+  }
+  .header-greetings ~ * {
+    display: none !important;
+  }
+  .about__images-box {
+    margin-left: -20px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .burger {
+    width: 28px !important;
+  }
+  .main-axis {
+    height: 483px !important;
+  }
+  .header-greetings {
+    width: 100% !important;
+  }
+  .burger {
+    display: block !important;
+  }
+}
+.burger {
+  display: none;
+}
+.carousel__item {
+  background-position: bottom right;
 }
 
 @media (max-width: 400px){
@@ -392,6 +499,7 @@ a{
   height: 855px;
   display: flex;
   font-family: 'RF Dewi Expanded';
+  flex-wrap: wrap;
 }
 .header-greetings {
   width: 43.472%;
@@ -564,4 +672,32 @@ a {
 .solution-text .about__text {
   margin-top: 52px;
   max-width: 530px;
+}
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.slick-dots button{
+  font-size: 0;
+  background: #4C5C6B;
+  opacity: 0.2;
+  width: 7px;
+  height: 7px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+.slick-active button{
+  opacity: 1;
+}
+.carousel__item-description {
+  margin: 24px 32px;
+  font-family: 'Raleway';
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 200;
+  max-width: 226px;
 }

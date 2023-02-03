@@ -1,25 +1,12 @@
-// $('.carousel__inner').slick({
-//   centerMode: true,
-//   centerPadding: '60px',
-//   slidesToShow: 3,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 1
-//       }
-//     }
-//   ]
-// });
+var menuOpened = false
+const toggleMenu = () => {
+  if (menuOpened) {
+    document.querySelector('.burger').setAttribute('src', 'images/menu.svg')
+  } else {
+    document.querySelector('.burger').setAttribute('src', 'images/cross.svg')
+  }
+  menuOpened = !menuOpened
+}
+document.querySelector('.burger').addEventListener('click', () => {
+  toggleMenu()
+})
