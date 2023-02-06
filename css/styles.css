@@ -574,13 +574,14 @@ p.burger-about-text:nth-child(4), p.burger-about-text:nth-child(6) {
 .carousel__item {
   background-position: bottom right;
 }
-
+body {
+  overflow-x: hidden;
+}
 @media (max-width: 400px){
   .about__images-box{
     width: 300px;
     height: 345px;
   }
-  
 }
 .main-axis {
   height: 855px;
