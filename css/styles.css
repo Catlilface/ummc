@@ -797,7 +797,8 @@ a {
 .burger-vacancies > p:nth-child(2)::after,
 p.sub:nth-child(1)::after,
 .burger-stripe > p:nth-child(2)::after {
-  content: url('../images/icon.svg')
+  content: url('../images/icon.svg');
+  margin-left: 27px;
 }
 .burger-about > p:nth-child(1), 
 .burger-vacancies > p:nth-child(2),
