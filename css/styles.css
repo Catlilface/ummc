@@ -793,6 +793,17 @@ a {
   display: flex;
   width: 56.528%
 }
-/* * {
-  outline: solid !important;
-} */
+.burger-about > p:nth-child(1)::after, 
+.burger-vacancies > p:nth-child(2)::after,
+p.sub:nth-child(1)::after,
+.burger-stripe > p:nth-child(2)::after {
+  content: url('../images/icon.svg')
+}
+.burger-about > p:nth-child(1), 
+.burger-vacancies > p:nth-child(2),
+p.sub:nth-child(1),
+.burger-stripe > p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
