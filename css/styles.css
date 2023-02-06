@@ -450,15 +450,13 @@ a{
   .header-greetings {
     padding: 14px 0 60px 0 !important;
     height: 483px;
+    justify-content: flex-end !important;
   }
   .greetings span, .greetings {
     font-size: 27px !important;
   }
   .greetings-s {
     font-size: 12px !important;
-  }
-  .header-greetings ~ * {
-    display: none !important;
   }
   .about__images-box {
     margin-left: -20px;
@@ -480,6 +478,85 @@ a{
   .burger {
     display: block !important;
   }
+  .header-more {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+  .burger-menu {
+    display: flex !important;
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    top: 69.1px;
+    left: 0;
+    height: calc(100vh - 69.1px);
+  }
+  .burger-menu .item {
+    padding: 25px 32px;
+    font-family: "RF Dewi Expanded";
+    color: #fff;
+  }
+  .burger-about {
+    background-color: var(--ummc-orange);
+  }
+  .burger-vacancies {
+    background-color: var(--ummc-dark-blue);
+  }
+  .burger-links {
+    background-color: var(--ummc-blue);
+  }
+  .burger-contacts {
+    background-image: url('../images/bbg.png');
+    flex-grow: 1;
+  }
+  .logo {
+    position: fixed;
+    padding: 14px 20px;
+    top: 0;
+    background-color: #fff;
+    z-index: 2147483647;
+  }
+  .burger-menu {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2147483647
+  }
+}
+.burger-menu {
+  display: none;
+}
+.burger-stripe .sub {
+  font-size: 16px;
+  margin-top: 24px;
+  line-height: 20px;
+}
+.main {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub {
+  font-size: 12px;
+  font-weight: 200;
+  font-family: "Raleway";
+  margin-top: 16px;
+}
+.burger-stripe > p:nth-child(2) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 24px 0;
+}
+.burger-contacts > p:nth-child(1) {
+  margin: 15px 0 32px;
+}
+p.burger-about-text:nth-child(3) {
+  margin-top: 10px;
+}
+p.burger-about-text:nth-child(3) > span:nth-child(1) {
+  margin-left: 16px;
+}
+p.burger-about-text:nth-child(4), p.burger-about-text:nth-child(6) {
+  margin-top: 32px;
+  margin-bottom: 10px;
 }
 .burger {
   display: none;
@@ -510,12 +587,12 @@ a{
   padding: 49px 70px 72px 70px;
 }
 .header-info {
-  width: 32.569%;
+  width: 57%;
   display: flex;
   flex-direction: column;
 }
 .header-other {
-  width: 23.959%;
+  width: 43%;
 }
 .greetings {
   font-size: 48px;
@@ -701,3 +778,10 @@ a {
   font-weight: 200;
   max-width: 226px;
 }
+.header-more {
+  display: flex;
+  width: 56.528%
+}
+/* * {
+  outline: solid !important;
+} */
