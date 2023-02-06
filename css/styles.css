@@ -343,10 +343,6 @@ a{
     line-height: 32px;
     margin-bottom: 48px;
   }
-  .about__images-box{
-    width: 386.19px;
-    height: 440px;
-  }
   .about__text{
     font-size: 14px;
     line-height: 24px;
@@ -769,13 +765,14 @@ a {
 }
 .slick-dots button{
   font-size: 0;
-  background: #4C5C6B;
+  background: #6b604c;
   opacity: 0.2;
   width: 7px;
   height: 7px;
   border: none;
   border-radius: 50%;
   padding: 0;
+  margin-top: 30px;
 }
 .slick-active button{
   opacity: 1;
