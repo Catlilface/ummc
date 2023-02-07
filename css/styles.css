@@ -337,7 +337,7 @@ a{
     padding-bottom: 32px;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 1350px){
   .about__text-strong{
     font-size: 27px;
     line-height: 32px;
